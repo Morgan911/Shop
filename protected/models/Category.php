@@ -105,4 +105,8 @@ class Category extends CActiveRecord
             $models =  self::model()->findAll();
             return $models;
         }
+        public static function menu(){
+            $model =  self::model()->findAllByAttributes(array('parentid' => 0));
+            return $model;
+        }
 }

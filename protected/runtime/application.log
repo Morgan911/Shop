@@ -3187,3 +3187,80 @@ in Z:\home\shop\www\index.php (13)
 2014/07/22 17:47:19 [warning] [application] Failed to set unsafe attribute "image" of "Category".
 in Z:\home\shop\www\protected\modules\admin\controllers\CategoryController.php (122)
 in Z:\home\shop\www\index.php (13)
+2014/07/22 23:12:00 [error] [php] Invalid argument supplied for foreach() (Z:\home\shop\www\protected\views\site\index.php:10)
+Stack trace:
+#0 Z:\home\shop\www\framework\web\CController.php(869): SiteController->renderFile()
+#1 Z:\home\shop\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 Z:\home\shop\www\protected\controllers\SiteController.php(31): SiteController->render()
+#3 Z:\home\shop\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 Z:\home\shop\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\shop\www\framework\web\CController.php(286): SiteController->runAction()
+#6 Z:\home\shop\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 Z:\home\shop\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\shop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in Z:\home\shop\www\protected\views\site\index.php (10)
+in Z:\home\shop\www\protected\controllers\SiteController.php (31)
+in Z:\home\shop\www\index.php (13)
+2014/07/22 23:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resized/2136987.jpg".' in Z:\home\shop\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController('resized/2136987...')
+#1 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\shop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resized/2136987.jpg
+HTTP_REFERER=http://shop/
+---
+2014/07/22 23:14:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resized/2136987.jpg".' in Z:\home\shop\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController('resized/2136987...')
+#1 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\shop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resized/2136987.jpg
+HTTP_REFERER=http://shop/
+---
+2014/07/22 23:16:20 [error] [exception.CDbException] exception 'CDbException' with message 'Table "sh_category" does not have a column named "parent_id".' in Z:\home\shop\www\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 Z:\home\shop\www\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 Z:\home\shop\www\protected\models\Category.php(109): CActiveRecord->findByAttributes(Array)
+#2 Z:\home\shop\www\protected\controllers\SiteController.php(30): Category::menu('0')
+#3 Z:\home\shop\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 Z:\home\shop\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\shop\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\shop\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\shop\www\framework\web\CWebApplication.php(282): CController->run('')
+#8 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#9 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\shop\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/
+---
+2014/07/22 23:19:24 [error] [php] Invalid argument supplied for foreach() (Z:\home\shop\www\protected\views\site\index.php:10)
+Stack trace:
+#0 Z:\home\shop\www\framework\web\CController.php(869): SiteController->renderFile()
+#1 Z:\home\shop\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 Z:\home\shop\www\protected\controllers\SiteController.php(31): SiteController->render()
+#3 Z:\home\shop\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 Z:\home\shop\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\shop\www\framework\web\CController.php(286): SiteController->runAction()
+#6 Z:\home\shop\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 Z:\home\shop\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\shop\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in Z:\home\shop\www\protected\views\site\index.php (10)
+in Z:\home\shop\www\protected\controllers\SiteController.php (31)
+in Z:\home\shop\www\index.php (13)
+2014/07/22 23:20:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resized/2136987.jpg".' in Z:\home\shop\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\shop\www\framework\web\CWebApplication.php(141): CWebApplication->runController('resized/2136987...')
+#1 Z:\home\shop\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\shop\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resized/2136987.jpg
+HTTP_REFERER=http://shop/
+---
